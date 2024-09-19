@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --fuente1: Arial, Helvetica, sans-serif;
+    --fuente2: 'Times New Roman', Times, serif;
+
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale: hsl(0, 0%, 90%);
+
+    --padding-container: 80px 0;
+}
+
+body{
+    font-family: var(--fuente1);
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --padding-container: 60px 0 45px;
+    background-color: var(--very-pale);
+}
+
+.hero__logo{
+    width: 30%;
+    max-width: 160px;
+}
+
+.hero__huddle{
+    width: 100%;
+    display: block;
+}
+
+.hero__cta{
+    color: var(--light-red);
+    text-decoration: none;
+    border: none;
+    padding: 6px 16px;
+    font-family: "Protest Guerrilla", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.hero__main{
+    text-align: center;
+    color: var(--light-red);
+}
+
+.hero__title{
+    font-family: "Protest Guerrilla", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero__parrafo{
+    margin: 16px auto;
+    width: 90%;
+    line-height: 1.5;
+    color: var(--light-red);
+    font-weight: 400px;
+}
+
+.cta{
+    display: inline-block;
+    background-color: white;
+    color: var(--light-red);
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    margin-top: 16px;
+    font-weight: 600;
+    border: 2px solid var(--light-red);
+}
+
+.hero__picture{
+    margin-top: 80px;
+}
+
+.hero__img{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero__numbers{
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 50px;
+    color: var(--light-red);
+}
+
+.hero__item{
+    overflow: hidden;
+}
+
+.hero__number{
+    font-size: 60px;
+}
+
+.hero__community{
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+.hero__icon{
+    display: block;
+    width: 140px;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px ;
+}
+
+.wave--bottom{
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+}
+
+.wave--top{
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
+}
+
+.section{
+    background-color: var(--very-pale);
+    --padding-container: 110px 0;
+}
+
+.section--white{
+    background-color: white;
+    position: relative;
+    --padding-container: 210px 0;
+}
+
+.section__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__img{
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.section__texts{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.informacion__cta{
+    color: var(--light-red);
+    text-decoration: none;
+    border: none;
+    padding: 6px 16px;
+    font-family: "Protest Guerrilla", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.section__paragraph{
+    text-align: justify;
+}
+
+.subtitle{
+    margin-bottom: 16px;
+    font-family: "Protest Guerrilla", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--light-red);
+}
+
+.question{
+    text-align: center;
+    position: relative;
+    --padding-container: 190px 0 210px;
+}
+
+.footer{
+    color: white;
+    background-color: var(--light-red)
+}
+
+.footer__container{
+    width: 90%;
+}
+
+.footer__title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    font-family: var(--fuente1);
+}
+
+.footer__paragraph{
+    line-height: 1.5;
+    margin: 16px 0 50px;
+    text-align: justify;
+}
+
+.footer__form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.footer__input{
+    flex-basis: 100%;
+    flex-grow: 1;
+    font-size: 16px;
+    font-family: var(--fuente2);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 16px 6px;
+    margin-bottom: 20px;
+}
+
+.footer__cta{
+    font-size: 16px;
+    font-family: var(--fuente2);
+    background-color: var(--pink);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: auto;
+}
+
+.footer__contact{
+    line-height: 50px;
+}
+
+.footer__contact::after{
+    content: "Phone: +34 xxx xx xx xx";
+    margin-left: 10px;
+}
+
+.footer_contact--email::after{
+    content: "info@peñaroja.com";
+
+}
+
+.footer__social{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.footer__link{
+    text-decoration: none;
+    width: 40px;
+}
+
+.footer__icon{
+    width: 100%;
+    display: block;
+}
+
+@media (min-width:768px){
+
+    .container{
+        width: 100%;
+        max-width: 1900px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: var(--padding-container);
+    }
+
+    .hero__logo{
+        width: 30%;
+        max-width: 400px;
+        padding-left: 180px;
+    }
+
+    .hero__cta{
+        font-size: 80px;
+        margin-right: 180px;
+    }
+
+    .hero__title{
+        font-size: 48px;
+    }
+
+    .hero__parrafo{
+        width: 70%;
+    }
+
+    .cta{
+        padding: 16px 60px;
+    }
+
+    .hero__numbers{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hero__icon{
+        width: 300px;
+    }
+
+
+    .section__container{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .section__container--inverse{
+        flex-direction: row;
+    }
+
+    .section__picture{
+        width: 50%;
+    }
+
+    .section__texts{
+        width: 45%;
+        margin: 50px;
+        text-align: start;
+    }
+
+    .footer__container{
+        --padding-conteiner:110px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__newsletter{
+        width: 50%;
+        max-width: 350px;
+        order: 1;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__content{
+        width: 50%;
+        max-width: 300px;
+    }
+
+    .footer__paragraph{
+        margin: 16px 0 10px;
+    }
+}
+
+
+
+
